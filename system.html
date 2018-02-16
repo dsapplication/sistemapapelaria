@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>DS - Application 1.0</title>
+		
+		<link href="css/config.css" rel="stylesheet">
+		<link href="css/menu.css" rel="stylesheet">
+		<link href="js/menu.js" rel="stylesheet">
+		
+		<!--SEARCH-->
+		<link href="css/search/config.css" rel="stylesheet">
+		
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+	
+<ul class="menu">
+
+      <li title="home"><a href="#" class="menu-button home">menu</a></li>
+      
+      <li title="search" data-toggle="modal" data-target="#busca"><a href="#" class="search">search</a></li>
+      <li title="pencil"><a href="#" class="pencil">pencil</a></li>
+      <li title="about"><a href="#" class="active about">about</a></li>
+      <li title="archive"><a href="#" class="archive">archive</a></li>
+      <li title="contact"><a href="#" class="contact">contact</a></li>
+    </ul>
+    
+    <ul class="menu-bar">
+        <li><a href="#" class="menu-button">Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Editorial</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+	
+	</body>
+</html>
+
+
+<!-- Modal BUSCA -->
+<div class="modal fade" id="busca" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Busca de Produtos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+	<div class="row">
+        <div class="col-md-6">
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Insira aqui o nome ou código do produto" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
